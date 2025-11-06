@@ -1,44 +1,51 @@
-# Build output
-build/
+# =========================================
+# Android Studio & Gradle
+# =========================================
 
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Generated files
+build/
 local.properties
-# IDE-specific files
-*.iml
+.DS_Store
+
+# IDE files
 .idea/
+*.iml
+
+# Gradle cache
 .gradle/
-local.properties
-.DS_Store
-# Captures and logs
-captures/
-*.log
 
 # Keystore files (NEVER commit these!)
 *.jks
 *.keystore
 
-# Other generated files
+# Output files
 *.apk
 *.aab
 *.ap_
 *.dex
 *.class
 
+# =========================================
+# Other Tools & Caches
+# =========================================
+
 # VS Code settings
 .vscode/
 
 # Kotlin build cache
 .kotlin/
+
+# Log files
+*.log
+
+# Android Studio captures
+captures/
+
+# =========================================
+# Project Specific (from your files)
+# =========================================
+
+# Any other temporary or generated files you might have
+# For example, if you have test reports you don't want to commit:
+# /app/build/reports/
+
