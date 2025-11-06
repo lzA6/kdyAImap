@@ -1,0 +1,30 @@
+-- schema.sql
+DROP TABLE IF EXISTS PointsOfInterest;
+DROP TABLE IF EXISTS Users;
+
+-- 用户表
+CREATE TABLE Users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT NOT NULL UNIQUE,
+  passwordHash TEXT NOT NULL,
+  email TEXT,
+  role TEXT NOT NULL DEFAULT 'STUDENT',
+  avatar TEXT,
+  bio TEXT,
+  phone TEXT,
+  isAnonymous INTEGER DEFAULT 0,
+  anonymousId TEXT,
+  createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 兴趣点表
+CREATE TABLE PointsOfInterest (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  latitude REAL NOT NULL,
+  longitude REAL NOT NULL,
+  category TEXT NOT NULL,
+  description TEXT,
+  createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+);

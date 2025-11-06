@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">tfai.workers.dev</domain>
+    </domain-config>
+    
+    <!-- 允许Cloudflare Workers的HTTPS连接 -->
+    <domain-config>
+        <domain includeSubdomains="true">my-map-backend.tfai.workers.dev</domain>
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </domain-config>
+    
+    <!-- 默认配置：只允许HTTPS连接 -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+</network-security-config>
