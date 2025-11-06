@@ -1,0 +1,44 @@
+# Build output
+build/
+
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# IDE-specific files
+*.iml
+.idea/
+.gradle/
+local.properties
+.DS_Store
+# Captures and logs
+captures/
+*.log
+
+# Keystore files (NEVER commit these!)
+*.jks
+*.keystore
+
+# Other generated files
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# VS Code settings
+.vscode/
+
+# Kotlin build cache
+.kotlin/
